@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius, Background, and Image Example</title>
+    <center> er suman </center > 
+    <style>
+        .container {
+            width: 700px;
+            height: 700px;
+            background-color: #4CAF50; /* Background color */
+            border: 5px solid #FF5722; /* Border color and width */
+            border-radius: 25px; /* Border radius */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ensures the image respects border-radius */
+            position: relative;
+        }
+
+        .container img {
+            width: 100%; /* Image takes full width of container */
+            height: 100%; /* Image takes full height of container */
+            object-fit: cover; /* Ensures the image covers the container */
+        }
+
+        .text {
+            position: absolute;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="suman.jpg" alt="Sample Image">
+        
+    </div>
+</body>
+</html>
